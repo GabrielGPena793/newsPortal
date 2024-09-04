@@ -1,0 +1,29 @@
+#featured {
+  grid-template-areas:
+    "A A B C"
+    "A A D E";
+
+  img {
+    height: 100%;
+  }
+}
+
+#featured #banner1 {
+  grid-area: A;
+}
+
+#featured #banner2 {
+  grid-area: B;
+}
+
+#featured #banner3 {
+  grid-area: C;
+}
+
+#featured #banner4 {
+  grid-area: D;
+}
+
+#featured #banner5 {
+  grid-area: E;
+}
