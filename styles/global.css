@@ -46,13 +46,24 @@ h3 {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .container {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 32px;
 }
 
-img {
-  max-width: 100%;
-  object-fit: cover;
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
 }
