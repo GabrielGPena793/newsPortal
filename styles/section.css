@@ -21,6 +21,7 @@ section header {
 }
 
 #featured {
+  grid-area: featured;
   grid-template-areas:
     "A A B C"
     "A A D E";
@@ -81,6 +82,8 @@ section header {
 }
 
 #weekly {
+  grid-area: weekly;
+
   & > div {
     grid-template-columns: repeat(4, 292px);
   }
@@ -102,5 +105,46 @@ section header {
       margin-top: 8px;
       font-weight: 800;
     }
+  }
+}
+
+#ia {
+  grid-area: ia;
+
+  img {
+    width: 176px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 8px 4px;
+  }
+
+  p {
+    color: var(--text-color-secondary);
+  }
+
+  article + article {
+    margin-top: 32px;
+  }
+}
+
+#more {
+  grid-area: more;
+  margin-top: 32px;
+
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+aside {
+  img {
+    width: 488px;
+    object-fit: cover;
+    border-radius: 4px;
   }
 }
