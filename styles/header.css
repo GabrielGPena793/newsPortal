@@ -1,3 +1,7 @@
+header {
+  overflow-x: hidden;
+}
+
 #primary_navigation {
   padding-block: 24px;
   justify-content: space-between;
@@ -14,4 +18,11 @@
   border: 1px solid var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+
+  @media (width < 80em) {
+    text-wrap: nowrap;
+
+    gap: 2rem;
+    overflow-x: auto;
+  }
 }

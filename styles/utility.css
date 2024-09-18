@@ -30,3 +30,9 @@
 .text-sm {
   font: var(--h3);
 }
+
+@media (width < 80em) {
+  .desktop-only {
+    display: none;
+  }
+}
